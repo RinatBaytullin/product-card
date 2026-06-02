@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+.title { /* Выбери свой продукт */
+  font-size: 70px;
+  line-height: 78px;
+  margin-top: 220px ;
+  text-align: center;
+  }
+.container { /* див контейнер для центрирования контейнера */
+  max-width: 1280px;
+  margin: 110px auto 116px;
+  }
+ 
+.label { /* для нормальной кожи */
+  font-size: 12px;
+  line-height: 24px;
+  color: #A5A3B9;
+}
+.components { /* список  */
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+.main-text-price { /* название Цена */
+  font-size: 20px;
+  line-height: 24px;
+}
+.product-price { /* цена в рублях */
+  margin-left: 180px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.img { /* стиль для фотокарточки */
+  display:block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 55px;
+}
+.card { /* стиль для карточки товара */
+  background: #F7F7FA;
+  width: 300px;
+  padding: 25px;  
+  list-style: none;
+  margin: 45px;
+}
