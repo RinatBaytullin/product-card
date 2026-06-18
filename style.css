@@ -1,20 +1,59 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #515076;
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
   }
 .title { /* Выбери свой продукт */
   font-size: 70px;
   line-height: 78px;
   margin-top: 110px ;
   text-align: center;
-  }
+ }
 .container { /* див контейнер для центрирования контейнера */
   max-width: 1280px;
   margin: 110px auto 116px;
-  background-image: url("images/bg_1.jpg"); /* эксперементирую но сам пока толком ничего не понимаю кажется((( */
-  }
+  background-image: url("images/bg_1.jpg"); /* фоновый рисунок одуванчики */
+  background-size: 100%;
+  
+ }
+ .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+ .card {  /* стиль для карточки товара */
+  background: #F7F7FA;
+  width: 340px;
+  padding: 25px;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 9px -6px 9px -5px rgba(132,132,139,0.87);
+-webkit-box-shadow: 9px -6px 9px -5px rgba(132,132,139,0.87);
+-moz-box-shadow: 9px -6px 9px -5px rgba(132,132,139,0.87);
+}
  .label { /* для нормальной кожи */
   font-size: 12px;
   line-height: 24px;
@@ -23,33 +62,26 @@ body {
 }
 .card-title { /* заголовок карточек */
   font-size: 20px; /* размер шрифта */
-  font-weight: 700px; /* жирность шрифта (bold) */
+  font-weight: 700; /* жирность шрифта (bold) */
   line-height: 27px; /* высота строки */
 }
 .components { /* список  */
   padding-left: 15px;
   margin-bottom: 25px;
 }
+
 .main-text-price { /* название Цена */
   font-size: 20px;
   line-height: 24px;
 }
 .product-price { /* цена в рублях */
-  margin-left: 170px;
+  margin-left: 150px;
   font-size: 20px;
   line-height: 24px;
-}
+ }
 .img { /* стиль для фотокарточки */
   display:block;
   width: 100%;
   height: auto;
   margin-bottom: 25px;
-}
-.card {  /* стиль для карточки товара */
-  background: #F7F7FA;
-  width: 340px;
-  padding: 25px;
-  box-sizing: border-box;
-  list-style: none;
-  margin: 45px;
 }
