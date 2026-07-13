@@ -88,14 +88,13 @@ body {
   line-height: 24px;
 }
 .product-card__button { /*регулятор расположения кнопки*/
-  display: flex; /*флекс дает команду внутр элеме расположи в одну линию*/
-  justify-content: center; /*управляет расположением по горизонтали ⬅➡*/ /*align-items управляет расположением по вертикали ⬆⬇*/
   margin: 0 auto 0 auto;
   margin-top: 20px; /* margin-top auto ставил тоже не правильно выставлялась кнопка сверху прилипает к цене, поэтому 20px поставил*/
 }
 .button { /*кнопка*/
   display: flex;
-  align-items: center;
+  justify-content: center; /*управляет расположением по горизонтали ⬅➡*/
+  align-items: center; /*align-items управляет расположением по вертикали ⬆⬇*/
   gap: 8px; /*добавляет одинаковое расстояние между + и купить.*/
   color:#515076;
   background-color: #FFFFFF;
