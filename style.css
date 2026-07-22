@@ -116,6 +116,27 @@ body {
   color: #171C26;
 }
 .button:focus { /*стиль при нажатии tab */
-  box-shadow: 0px 0px 0px 4px rgb(79, 219, 138, 0.2);
+  box-shadow: 0px 0px 0px 4px rgba(79, 219, 138, 0.2);
   outline: none;
+}
+.controls {
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    margin-top: 400px;
+    margin-left: 20px;
+}
+.products__content { /*этот стиль для контейнера кнопок расположенных слева*/
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.button--google {
+  background: #ffbe00;
+  color: white;
+}
+.button-active {
+  background-color: #4fdb8a33;
+  color: #515076;
 }
