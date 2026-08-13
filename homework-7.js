@@ -36,7 +36,7 @@ function buyProduct(budget) {
 }
 
 buyProduct(100000); //хватает если это
-buyProduct(50000); //не хватает если это пополни баланс
+buyProduct(50000); //не хватает, если это пополни баланс
 
 // Задание 6
 function greet(firstName) {
