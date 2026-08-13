@@ -136,7 +136,7 @@ body {
   background: #ffbe00;
   color: white;
 }
-.button-active {
+.button--active {
   background-color: #4fdb8a33;
   color: #515076;
 }
