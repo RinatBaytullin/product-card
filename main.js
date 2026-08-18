@@ -5,8 +5,8 @@ const greenColorHash = '#00af57';
 const blueColorHash = '#3186ff';
 
 changeColorAllCardButton.addEventListener('click', () => {
-  productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
-})
+  productCards.forEach((card) => card.style.backgroundColor = greenColorHash);
+});
 
 // Покарсить первую крточку
 const firstProductCards = document.querySelector('.product-card');
@@ -17,17 +17,15 @@ changeColorFirstCardButton.addEventListener('click', () => {
 })
 
 //Открыть google
-const openGoogleButton = document.querySelector ('#open-google')
-openGoogleButton.addEventListener('click', openGoogle)
+const openGoogleButton = document.querySelector ('#open-google');
+openGoogleButton.addEventListener('click', openGoogle);
 
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?');
 
   if (answer === true) {
-    window.open('https://google.com')
-  } else {
-    return;
-  }
+    window.open('https://google.com');
+  } 
 }
 // Вывод консоль лог
 
@@ -51,5 +49,5 @@ productsTitle.addEventListener('mouseenter', () => {
 const changeButtonColor = document.querySelector('#change-button-color');
 
 changeButtonColor.addEventListener('click', () => {
-    changeButtonColor.classList.toggle('button-active'); //classList.toggle меняет цвет через стиль при каждом нажатии есть цвет нет цвета 
+    changeButtonColor.classList.toggle('button--active'); //classList.toggle меняет цвет через стиль при каждом нажатии есть цвет нет цвета 
 });
