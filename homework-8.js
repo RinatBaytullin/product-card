@@ -25,21 +25,22 @@ const car = {
 };
 
 // Добавляем владельца user
-car.master=user
+car.master = user
 
 console.log("Владелец автомобиля -" , car.master.firstName);
 
 // Задание №5. Добавление максимальной скорости
+// hasOwnProperty - это метод проверки
 
 function addMaxSpeed(car) {
-    if (!car.maxSpeed) {
+    if (!car.hasOwnProperty("maxSpeed")) {
         car.maxSpeed = 180;
     }
 }
 
 addMaxSpeed(car);
 
-console.log(car.maxSpeed);
+console.log(car);
 
 // №6. Получаем свойства из объекта
 
