@@ -1,6 +1,6 @@
 //Задание 3
 function showTemperature(city, temperature) {
-  console.log(`Сейчас в ${city} температура + ${temperature} градусов по Цельсию`);
+  console.log(`Сейчас в ${city} температура - ${temperature} градусов по Цельсию`);
 }
 
 showTemperature("Екатеринбурге", 25);
@@ -52,3 +52,13 @@ const city = "Екатеринбург";
 console.log(firstName);
 console.log(`Мне ${age} лет`);
 console.log(city);
+
+
+function sum(a1, a2) {
+  return a1 + a2;
+}
+const c = sum(7, 3);
+const b = sum(5, 4);
+console.log(c);
+console.log(b);
+
