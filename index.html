@@ -17,7 +17,8 @@
     </div>
     <section class="products">
       <h1 class="products__title">Выбери свой продукт</h1>
-      <ul class="products__list">
+      <ul class="products__list" id="product-list"></ul>
+  <!--<ul class="products__list">
         <li class="product-card">
           <img class="product-card__image" src="images/photo_1.jpg" alt="Товар Увлажняющий мусс" />
           <p class="product-card__label">для нормальной кожи</p>
@@ -122,12 +123,31 @@
             <span class="button__text">Купить</span>
           </button>
         </li>
-      </ul>      
+      </ul>-->      
     </section>
   </div> 
+  <template id="product-template">
+    <li class="product-card">
+      <img class="product-card__image" src="" alt="" width="290" height="245" />
+      <p class="product-card__label"></p>
+      <h2 class="product-card__title"></h2>
+      <p class="product-card__description"></p>
+      <span>Состав:</span>
+      <ul class="product-card__components"></ul>
+      <div class="product-card__price">
+        <b>Цена</b>
+        <span class="product-card__price-value"></span>
+      </div>
+      <button class="product-card__button button button--buy">
+        <img class="button__icon" src="images/button_plus.svg" width="16" height="16">
+        <span class="button__text">Купить</span>
+      </button>
+    </li>
+  </template>
   <!-- <script src="main.js"></script>   -->
   <!-- <script src="homework-7.js"></script> -->
   <!-- <script src="homework-8.js"></script> -->
-  <script type="module" src="homework-9.js"></script>
+  <!--<script type="module" src="homework-9.js"></script>-->
+  <script type="module" src="homework-10.js"></script>
 </body>
 </html>
